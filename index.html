@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1 {
+            background-color: rgb(7, 161, 161);
+        }
+
+        .s2 {
+            background-color: rgb(7, 161, 161);
+            display: flex;
+            align-items: center;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <form >
+    <fieldset style="background-color: beige;height:700px">
+        <legend><span class="s1">Personal Data</span></legend>
+        <fieldset style="background-color:olive;height:120px">
+            <legend><span class="s2">YourName</span></legend>
+        <pre>
+First Name   : <input type="text" name="fname" placeholder="ex.Nancy">
+Second Name  : <input type="text" name="lname" placeholder="ex.Nader"></pre>
+        
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        
+        <pre>
+<label for="ph">Your Phone  :</label><input type="tel" name="phone" pattern="^01[0-2,5]{1}[0-9]{8}$" id="ph" >
+<label for="email">Email       :</label><input type="email" name="mail" id="email">
+<label for="password">Password    :</label><input type="password" name="password" id="password">
+<label for="pass">Re-Password :</label><input type="password" name="re-pass" id="pass"></pre>
+        <br>
+        <br>
+           Gender :
+           <br>
+           <input type="radio" id="fe" name="gender" value="female">
+           <label for="fe">Female</label>
+           <br>
+           <input type="radio" id="ml" name="gender" value="male">
+           <label for="ml">Male</label>
+           <br>
+           <br>
+           Fav Languages :
+           <br>
+           <input type="checkbox" name="languages" id="htm" value="html">
+           <label for="htm">HTML</label>
+           <br>
+           <input type="checkbox" name="languages" id="css" value="css">
+           <label for="css">CSSL</label>
+           <br>
+           <input type="checkbox" name="languages" id="java" value="java">
+           <label for="java">JAVA</label>
+           <br>
+           <input type="checkbox" name="languages" id="py" value="python">
+           <label for="py">PYTHON</label>
+           <br>
+           <br>
+           <br>
+           <label for="section">Track :</label>
+           <br>
+           <select name="track" id="section">
+            <option value="auc" hidden selected disabled>TRACK</option>
+            <optgroup label="Web Development">
+                <option value="front-end">Front-End developer</option>
+                <option value="back-end">Back-End developer</option>
+                <option value="fullstack">Full-Stack developer</option>
+            </optgroup>
+            <optgroup label="Mobile Development">
+                <option value="android">Android developer</option>
+                <option value="ios">IOS developer</option>
+            </optgroup>
+            <optgroup label="Mobile Development" disabled>
+                <option value="android">Android developer</option>
+                <option value="ios">IOS developer</option>
+            </optgroup>
+           </select>
+           <br>
+           <br>
+        <input type="image" src="images/submit-button-png-hi.png" width="60px">
+    </fieldset>
+    </form>
+</body>
+
+</html>
